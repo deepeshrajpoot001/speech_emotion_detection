@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML code for activity_main.xml-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+
+    <!--Heading Text View-->
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp"
+        android:layout_margin="5dp"
+        android:text="Speech Emotion Detection"
+        android:textAlignment="center"
+        android:background="#E3E4E8"
+        android:textColor="#154C02"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#03235A"
+        android:text="Made by:\n Deepesh Rajpot\n Ishant Vaidh\n \nunder the guidance of : \n Dr. Atul Kr. Dwivedi"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <!--This will display the status of our app when
+        we will record some audio and play that audio-->
+    <TextView
+        android:id="@+id/idTVstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/status"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+
+    <!--Linear Layout for adding textviews
+        in horizontal manner-->
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!--Textview to start audio recording
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnRecord"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/green_500"
+            android:padding="5dp"
+            android:text="start"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/round_mic_24" />
+
+        <!--Textview to stop audio recording
+            drawableTop will add above mic image
+        <TextView
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:padding="5dp"
+            android:text="@string/stop_recording"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/round_mic_off_24" />
+
+       Textview to play audio that is recorded
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnPlay"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:padding="5dp"
+            android:text="play"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/round_play_arrow_24" />
+
+        <!--Textview to pause the play of audio recording
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnUpload"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:lines="2"
+            android:padding="5dp"
+            android:text="upload"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:drawableTopCompat="@drawable/round_file_upload_24" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+
+
+    <TextView
+        android:id="@+id/idTVresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="200dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

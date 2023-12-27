@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Speech Emotion Detection</string>
+    <string name="status">Status</string>
+
+</resources>
