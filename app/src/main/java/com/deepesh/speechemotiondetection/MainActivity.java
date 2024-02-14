@@ -100,6 +100,12 @@ public class MainActivity extends AppCompatActivity {
             .readTimeout(30, TimeUnit.SECONDS)
             .writeTimeout(30, TimeUnit.SECONDS)
             .build();
+    //one two four
+    //ok
+
+    public static  void deepesh(){
+
+    }
     public interface ApiService {
         @Multipart
         @POST("predict")
